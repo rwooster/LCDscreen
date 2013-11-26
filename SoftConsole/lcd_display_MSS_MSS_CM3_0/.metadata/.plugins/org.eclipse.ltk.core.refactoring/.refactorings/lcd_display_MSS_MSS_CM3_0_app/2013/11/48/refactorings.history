@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lcd_display_MSS_MSS_CM3_0_app/display.cpp&apos; to &apos;display.c&apos;" description="Rename resource &apos;display.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="display.cpp" name="display.c" stamp="1385499932423" updateReferences="true"/>
+</session>

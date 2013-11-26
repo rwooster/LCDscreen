@@ -1,0 +1,15 @@
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  N:\eecs373\lcd_display\synthesis  -part A2F200M3F  -package FBGA484  -grade -1   -globalthreshold 50 -maxfan 24 -opcond COMWC     -report_path 0   -RWCheckOnRam 0     -summaryfile N:\eecs373\lcd_display\synthesis\synlog\report\lcd_display_fpga_mapper.xml -top_level_module  lcd_display  -flow mapping  -mp 1 -prjfile  N:\eecs373\lcd_display\synthesis\scratchproject.prs  -implementation synthesis -licensetype  synplifypro_actel  -oedif  N:\eecs373\lcd_display\synthesis\lcd_display.edn  -freq 100.000  N:\eecs373\lcd_display\synthesis\synwork\lcd_display_premap.srd  -sap  N:\eecs373\lcd_display\synthesis\lcd_display.sap  -otap  N:\eecs373\lcd_display\synthesis\lcd_display.tap  -omap  N:\eecs373\lcd_display\synthesis\lcd_display.map  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -sap  N:\eecs373\lcd_display\synthesis\lcd_display.sap  -ologparam  N:\eecs373\lcd_display\synthesis\syntmp\lcd_display.plg  -osyn  N:\eecs373\lcd_display\synthesis\lcd_display.srm  -prjdir  N:\eecs373\lcd_display\synthesis\  -prjname  lcd_display_syn  -log  N:\eecs373\lcd_display\synthesis\synlog\lcd_display_fpga_mapper.srr 
+rc:1 success:1
+N:\eecs373\lcd_display\synthesis\scratchproject.prs|o|1385416466|1926
+N:\eecs373\lcd_display\synthesis\lcd_display.edn|o|1385418151|98192
+N:\eecs373\lcd_display\synthesis\synwork\lcd_display_premap.srd|i|1385418148|11200
+N:\eecs373\lcd_display\synthesis\lcd_display.sap|o|1385418148|91
+N:\eecs373\lcd_display\synthesis\lcd_display.tap|o|0|0
+N:\eecs373\lcd_display\synthesis\lcd_display.map|o|1385418154|28
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
+N:\eecs373\lcd_display\synthesis\lcd_display.sap|o|1385418148|91
+N:\eecs373\lcd_display\synthesis\syntmp\lcd_display.plg|o|1385418154|664
+N:\eecs373\lcd_display\synthesis\lcd_display.srm|o|1385418151|76994
+N:\eecs373\lcd_display\synthesis\synlog\lcd_display_fpga_mapper.srr|o|1385418154|12285
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe|i|1360942034|13812224
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\m_proasic.exe|i|1360942022|11409920

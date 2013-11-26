@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include "drivers/mss_uart/mss_uart.h"
+#include "display.h"
+
+int main()
+{
+	MSS_UART_init
+	(
+		&g_mss_uart1,
+	    MSS_UART_115200_BAUD,
+	    MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
+	);
+
+	draw_line(0, 0, 127, 127);
+
+	return 0;
+}

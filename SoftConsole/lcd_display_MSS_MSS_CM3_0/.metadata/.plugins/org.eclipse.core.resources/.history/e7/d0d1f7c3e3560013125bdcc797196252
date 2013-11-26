@@ -1,0 +1,20 @@
+/*
+ * display.h
+ *
+ *  Created on: Nov 26, 2013
+ *      Author: fstan
+ */
+
+#ifndef DISPLAY_H_
+#define DISPLAY_H_
+
+#include <inttypes.h>
+#include "drivers/mss_uart/mss_uart.h"
+
+
+/*
+ * Draw a line from coordinates (x1, y1) to (x2, y2)
+ */
+void draw_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2);
+
+#endif /* DISPLAY_H_ */

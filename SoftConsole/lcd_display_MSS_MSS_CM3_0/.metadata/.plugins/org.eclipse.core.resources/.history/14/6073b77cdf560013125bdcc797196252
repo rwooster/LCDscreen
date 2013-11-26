@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include "drivers/mss_uart/mss_uart.h"
+#include "display.h"
+
+int main()
+{
+	MSS_UART_init
+	(
+		&g_mss_uart1,
+	    MSS_UART_115200_BAUD,
+	    MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
+	);
+
+
+	//uint8_t tx_buff[11] = {0x7C, 0x00, 0x7C, 0x0C, 0x00, 0x0A, 0x32, 0x3C};
+	//MSS_UART_polled_tx( &g_mss_uart1, tx_buff, sizeof(tx_buff) );
+
+	draw_line(0x00, 0x0A, 0x32, 0x3C);
+
+	return 0;
+}

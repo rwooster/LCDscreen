@@ -1,0 +1,37 @@
+/*
+ * display.c
+ *
+ *  Created on: Nov 26, 2013
+ *      Author: fstan
+ */
+
+#include "display.h"
+
+void clear_screen()
+{
+	uint8_t tx_buff[2] = {0x7C, 0x00};
+	MSS_UART_polled_tx( &g_mss_uart1, tx_buff, sizeof(tx_buff) );
+}
+
+void set_x(uint8_t x)
+{
+	uint8_t tx_buff[3] = {0x7C, 0x18, x};
+	MSS_UART_polled_tx( &g_mss_uart1, tx_buff, sizeof(tx_buff) );
+}
+
+void set_y(uint8_t y){
+	uint8_t tx_buff[3] = {0x7C, 0x19, y};
+	MSS_UART_polled_tx( &g_mss_uart1, tx_buff, sizeof(tx_buff) );
+}
+
+void draw_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2)
+{
+	uint8_t tx_buff[7] = {0x7C, 0x0C, x1, y1, x2, y2, 0x01};
+	MSS_UART_polled_tx( &g_mss_uart1, tx_buff, sizeof(tx_buff) );
+}
+
+void erase_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2)
+{
+	uint8_t tx_buff[7] = {0x7C, 0x0C, x1, y1, x2, y2, 0x00};
+	MSS_UART_polled_tx( &g_mss_uart1, tx_buff, sizeof(tx_buff) );
+}
